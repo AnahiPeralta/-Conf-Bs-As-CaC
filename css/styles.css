@@ -288,7 +288,7 @@ h2 {
     background-color: white;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.336);
+    box-shadow: 0 0px 3.5px rgba(0, 0, 0, 0.253);
     text-align: left;
     display: flex;
     flex-direction: column; 
