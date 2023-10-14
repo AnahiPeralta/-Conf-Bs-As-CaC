@@ -270,7 +270,6 @@ h2 {
 
 /*Sección speakers - Cards*/
 .speakers {
-    background-color: #f8f8f8;
     padding: 20px;
     text-align: center;
 }
@@ -289,7 +288,7 @@ h2 {
     background-color: white;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.336);
     text-align: left;
     display: flex;
     flex-direction: column; 
