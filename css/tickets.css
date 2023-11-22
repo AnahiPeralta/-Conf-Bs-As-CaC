@@ -1,0 +1,145 @@
+.tickets-container{
+   padding: 7rem 8% 2rem 8%;
+}
+
+.container-card.t {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container-card.t .card {
+    text-align: center;
+    box-shadow: none;
+}
+
+.container-card.t .card {
+    text-align: center;
+    padding: 40px 15px;
+    border-radius: 2px;
+}
+
+.container-card.t .card p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container-card.t .card.blue {
+    border: 1px solid blue;
+}
+
+.container-card.t .card.green {
+    border: 1px solid green;
+}
+
+.container-card.t .card.yellow {
+    border: 1px solid rgb(179, 179, 0);
+}
+
+/*Pago*/
+
+form.form-pago .data-t{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 730px;
+}
+
+.cant-catg{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+}
+
+.cant, .category {
+    display: grid;
+}
+
+.form {
+    padding: 2rem 8% 4rem 8%;
+}
+
+.data-t input, .mail input {
+    width: 100%;
+}
+
+.form-pag-s {
+    padding: 30px 0px;
+}
+
+.importe {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    background-color: #C3DEF8;
+    border-radius: 5px;
+}
+
+.data-t input, .mail input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(175, 175, 175);
+}
+
+.cant label, .category label {
+    margin-bottom: 10px;
+}
+
+.cant input, .category select {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(175, 175, 175);
+}
+
+.buttons-control {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.buttons-control button {
+    padding: 10px 0px;
+    background-color: #9CC945; 
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons-control button:hover {
+    background-color: #7db60b; 
+}
+
+@media (max-width: 900px) { 
+    .container-card.t {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    form.form-pago .data-t{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        width: 100%;
+    }
+    .container-card.t.k {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .container-card.t {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .container-card.t .card {
+        padding: 20px 15px;
+    }
+}

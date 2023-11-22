@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Integrador</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tickets.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <button class="toggle-button" id="toggleButton">&#9776;</button>
+            <div class="logo">
+                <a href="index.html"><img src="img/codoacodo.png" alt=""></a>
+                <a href="index.html"><h1>Conf Bs As</h1></a>
+            </div>
+            <ul class="nav" id="navList">
+                <a href="index.html#carousel"><li class="nav-item active">La conferencia</li></a>
+                <a href="index.html#speaker"><li class="nav-item">Los oradores</li></a>
+                <a href="index.html#info-conf"><li class="nav-item">El lugar y la fecha</li></a>
+                <a href="index.html#form-sp"><li class="nav-item">Conviértete en orador</li></a>
+                <a href="tickets.html"><li class="nav-item tickets">Compra tickets</li></a>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="tickets-container">
+            <div class="container-card t">
+                <div class="card blue">
+                    <h3>Estudiante</h3>
+                    <p>Tienen un descuento</p>
+                    <p style="font-weight: bold; font-size: 18px;">80%</p>
+                    <p>* presentar documentación</p>
+                </div>
+                <div class="card green">
+                    <h3>Trainee</h3>
+                    <p>Tienen un descuento</p>
+                    <p style="font-weight: bold; font-size: 18px;">50%</p>
+                    <p>* presentar documentación</p>
+                </div>
+                <div class="card yellow">
+                    <h3>Junior</h3>
+                    <p>Tienen un descuento</p>
+                    <p style="font-weight: bold; font-size: 18px;">15%</p>
+                    <p>* presentar documentación</p>
+                </div>
+            </div>
+        </section>
+        <section class="form">
+            <div class="container-card t k">
+                <div class="formulario">
+                    <span>VENTA</span>
+                    <h2>Valor de ticket $200</h2>
+                    <form id="formularioPago" class="form-pago">
+                        <div class="form-pag-s">
+                            <div class="data-t">
+                                <label for="nombre"></label>
+                                <input type="text" id="nombre" placeholder="Nombre" required>    
+                                <label for="apellido"></label>
+                                <input type="text" style="margin-left: 10px;" id="apellido" placeholder="Apellido" required>    
+                            </div>      
+                            <div class="mail">
+                                <label for="correo"></label>
+                                <input type="email" style="margin-top: 10px;" id="correo" placeholder="Correo" required>    
+                            </div>
+                            <div class="cant-catg">
+                                <div class="cant">
+                                    <label for="cantidad">Cantidad</label>
+                                    <input type="number" id="cantidad" placeholder="Cantidad" required>    
+                                </div>
+                                <div class="category" style="margin-left: 10px;">
+                                    <label for="categoria">Categoría</label>
+                                    <select id="categoria" required>
+                                        <option value="estudiante">Estudiante</option>
+                                        <option value="trainee">Trainee</option>
+                                        <option value="junior">Junior</option>
+                                        <option value="otro">Otro</option>
+                                    </select>    
+                                </div>    
+                            </div>    
+                        </div>
+                        
+                        <div id="vistaTotal" class="importe">
+                            <p style="margin-right: 10px;">Total a Pagar: </p>
+                            <p id="total">$ 0</p>
+                        </div>
+    
+                        <div class="buttons-control">
+                            <button type="button" onclick="borrarFormulario()">Borrar</button>    
+                            <button type="button" onclick="calcularTotal()">Resumen</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <ul class="nav-footer">
+                <li class="nav-item">Preguntas Frecuentes</li>
+                <li class="nav-item">Contáctanos</li>
+                <li class="nav-item">Prensa</li>
+                <li class="nav-item">Conferencias</li>
+                <li class="nav-item">Términos y condiciones</li>
+                <li class="nav-item">Privacidad</li>
+                <li class="nav-item">Estudiantes</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/calcul.js"></script>
+</body>
+</html>
